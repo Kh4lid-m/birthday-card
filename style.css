@@ -228,7 +228,7 @@ button { font-family: inherit; }
 @media (max-width: 600px) {
 
     .lovely-image-frame {
-        width: 90%;
+        width: 50%;
         padding: 8px;
         border-radius: 22px;
     }
