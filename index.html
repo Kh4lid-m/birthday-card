@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, My Love · Five Years of Us</title>
+  <meta name="description" content="Open a birthday surprise filled with flowers, a birthday melody and a heartfelt letter celebrating five years of love." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="gift-world">
+    <div class="bg-photo" aria-hidden="true"></div>
+    <div class="gift-shell">
+      <header class="gift-header">
+        <span class="eyebrow">Happy Birthday</span>
+        <span class="year-badge">5 years of us</span>
+      </header>
+
+      <section class="gift-intro" id="gift-intro" aria-label="Your birthday surprise">
+        <div class="door-stage">
+          <img class="birthday-image" src="assets/birthday.jpg" alt="A birthday cake with glowing candles and pink roses" width="1024" height="1024" />
+          <div class="door door-left" aria-hidden="true"></div>
+          <div class="door door-right" aria-hidden="true"></div>
+          <div class="door-heart" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </div>
+        </div>
+        <h1>Happy Birthday, my love</h1>
+        <p id="intro-text">A little world I made, just for you.</p>
+        <button class="button gift-button open-button" id="open-button">
+          <span id="open-button-label">Open your surprise</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </button>
+      </section>
+
+      <section class="bento" aria-label="Made with love">
+        <div class="song glass" id="song-card">
+          <div class="song-row">
+            <span class="music-symbol" aria-hidden="true">♪</span>
+            <div class="song-text">
+              <p class="song-title">Happy Birthday to You</p>
+              <p class="song-subtitle" id="song-subtitle">A little birthday melody · just for you</p>
+            </div>
+            <button class="button music-button" id="music-button" aria-label="Play birthday song" title="Play birthday song">
+              <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><polygon points="6 3 20 12 6 21 6 3"/></svg>
+              <svg id="icon-pause" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="display:none"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></svg>
+            </button>
+          </div>
+          <div class="equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+          <audio id="song" src="assets/birthday.wav" preload="none"></audio>
+        </div>
+
+        <div class="picture glass">
+          <img src="assets/roses.jpg" alt="Watercolor blush roses and eucalyptus, a bouquet for you" width="816" height="816" loading="lazy" />
+          <p>Flowers, just for you</p>
+        </div>
+        <div class="picture glass">
+          <img src="assets/heart.jpg" alt="Two hands holding a little pink paper heart" width="816" height="816" loading="lazy" />
+          <p>My heart, always yours</p>
+        </div>
+
+        <div class="letter-preview glass">
+          <div class="letter-heading">
+            <span class="eyebrow">A letter · five years of love</span>
+            <svg class="mail-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <p>Five years of ordinary days that became my favorite story. And I would choose you in every chapter.</p>
+          <button class="button gift-button" id="letter-button" aria-expanded="false" aria-controls="love-letter">
+            <span id="letter-button-label">Read the letter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+          </button>
+          <div class="letter-body" id="love-letter" style="display:none">
+            <h2>To my favorite person,</h2>
+            <p>Happy birthday, my love. Today, I wish I could wrap up all the happiness you have given me and give it back to you. You deserve every beautiful thing this world has to offer.</p>
+            <p>For five years, you have been my favorite hello, my comfort on the difficult days, and the reason so many little moments feel special. Loving you has been the most beautiful part of my life.</p>
+            <p>Thank you for your kindness, your laughter, and for being exactly who you are. I love the big moments we share, but I love the quiet ones just as much—simply knowing that I have you beside me.</p>
+            <p>My wish for you is a year full of peace, dreams coming true, and so many reasons to smile. Whatever tomorrow brings, I want to keep growing with you, choosing you, and making memories with you.</p>
+            <p>Five years of us, and my heart still says the same thing: it’s you. It has always been you. Here’s to your beautiful birthday, and to all the birthdays we have yet to share.</p>
+            <p class="signature">With all my love,<br />Always yours ♡</p>
+          </div>
+        </div>
+      </section>
+
+      <p class="gift-footer">Made with love. For you, always. ♡</p>
+    </div>
+    <div class="celebration" id="celebration" aria-hidden="true"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
